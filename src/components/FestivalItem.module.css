@@ -1,0 +1,24 @@
+.text {
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    margin: 250px 130px;
+    font-weight: bold;
+    font-stretch: expanded;
+    columns: auto;
+    color: yellowgreen;
+    line-height: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+
+.text button {
+    background-color: yellow;
+    color: black;
+}
+
+.text button:hover {
+    background-color: rgb(51, 188, 56);
+    color: black;
+}

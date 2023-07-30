@@ -1,0 +1,38 @@
+.header {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(3, 35, 57);
+  }
+  
+  .list {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .list a {
+    text-decoration: none;
+    color: var(--color-primary-400);
+    font-size: 1.2rem;
+  }
+  
+  .list a:hover,
+  .list a.active {
+    color: var(--color-primary-800);
+    text-decoration: underline;
+  }
+  
+  .list button {
+    background-color: rgb(189, 147, 95);
+    border-radius: 25px;
+    font-size: larger;
+    font-style: italic;
+  }
+  
+  .list button:hover {
+    background-color: rgb(230, 151, 41);
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  

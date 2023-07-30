@@ -1,0 +1,76 @@
+.form {
+  max-width: 40rem;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.form label,
+.form input,
+.form textarea,
+.form select {
+  display: block;
+  width: 100%;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+.form label {
+  color: rgb(207, 207, 47);
+}
+
+.form input:focus-visible {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.form select {
+  background: rgba(0, 0, 0, 0.45);
+}
+.form select option{
+  background: rgb(62, 49, 129);
+  cursor: pointer;
+}
+
+.form input {
+  background-color: rgba(207, 242, 200, 0.15);
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  background-color: rgb(126, 126, 243);
+  color: var(--color-gray-800);
+  border: none;
+}
+
+.actions button[type="button"] {
+  background-color: rgb(126, 126, 243);
+  color: var(--color-gray-800);
+}
+
+.actions button:hover {
+  background-color: rgb(129, 5, 131);
+  color: aliceblue;
+}
+
+.actions button[type="button"]:hover {
+  background-color: rgb(129, 5, 131);
+  color: aliceblue;
+}
