@@ -14,8 +14,6 @@ const Root = () => {
       return;
     }
 
-    // ALI ZATO OVDE UBACUJEMO OVU PRICU I ONDA SVE OK !!!
-
     if (token === "EXPIRED") {
       submit(null, { action: "logout", method: "POST" });
       return;

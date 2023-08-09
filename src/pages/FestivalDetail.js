@@ -17,8 +17,8 @@ const FestivalDetail = () => {
 
 export default FestivalDetail;
 
-const loadFestival = (id) => {
-  return FestivalsAxios.get("festivals/" + id)
+const loadFestival = async(id) => {
+  return await FestivalsAxios.get("festivals/" + id)
     .then((res) => {
       console.log(res.data);
       return res.data;
@@ -26,7 +26,7 @@ const loadFestival = (id) => {
     .catch((error) => {
       console.log(error);
       throw json(
-        { message: "Could not fetch details for selected event!" },
+        { message: "Could not fetch details for selected festival!" },
         { status: 500 }
       );
     });
@@ -55,5 +55,5 @@ export const action = async({request, params}) => {
       console.log(error);
       throw json({ message: "The festival is not deleted" }, { status: 500 });
     });
-  return redirect("..");
+  return redirect("/festivals");
 }

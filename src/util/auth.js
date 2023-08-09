@@ -5,7 +5,6 @@ export const getTokenDuration = () => {
   const expirationDate = new Date(storedExspirationDate);
   const now = new Date();
   const duration = expirationDate.getTime() - now.getTime();
-
   return duration;
 };
 
@@ -33,12 +32,10 @@ export const tokenLoader = () => {
 export const checkAuthLoader = () => {
 
     const tokenRole = getAuthToken();
-
     const token = tokenRole[0];
 
     if(!token) {
       return  redirect('login')
     }
-
     return 0;
 }

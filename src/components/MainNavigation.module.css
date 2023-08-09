@@ -1,6 +1,6 @@
 .header {
     border-bottom: 1px solid black;
-    padding: 1rem;
+    padding: 0.6rem;
     display: flex;
     justify-content: space-between;
     background-color: rgb(3, 35, 57);
@@ -10,11 +10,16 @@
     display: flex;
     gap: 2rem;
   }
+
+  .list nav {
+    margin-left: 350px;
+  }
   
   .list a {
     text-decoration: none;
     color: var(--color-primary-400);
     font-size: 1.2rem;
+    justify-content: center;
   }
   
   .list a:hover,
@@ -24,6 +29,7 @@
   }
   
   .list button {
+    height: 2.2rem;
     background-color: rgb(189, 147, 95);
     border-radius: 25px;
     font-size: larger;

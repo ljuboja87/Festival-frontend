@@ -1,14 +1,13 @@
 .form {
   max-width: 40rem;
   height: auto;
-  margin: 2rem auto;
+  margin: -2rem auto;
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.65);
 }
 
 .form label,
 .form input,
-.form textarea,
 .form select {
   display: block;
   width: 100%;
@@ -17,11 +16,24 @@
   color: white;
 }
 
+.form textarea {
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  font-weight: bolder;
+  text-align: center;
+  color: inherit;
+}
+
 .form label {
   color: rgb(207, 207, 47);
 }
 
 .form input:focus-visible {
+  background-color: antiquewhite;
+  color: black;
+}
+.form textarea:focus-visible {
   background-color: antiquewhite;
   color: black;
 }
@@ -58,6 +70,11 @@
   background-color: rgb(126, 126, 243);
   color: var(--color-gray-800);
   border: none;
+}
+
+.actions button:disabled {
+  background-color: rgb(151, 91, 91);
+  color: white;
 }
 
 .actions button[type="button"] {

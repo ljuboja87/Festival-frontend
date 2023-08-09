@@ -13,7 +13,7 @@ const SearchForm = () => {
   console.log(venuId);
 
   const submitHandler = () => {
-    dispatch(loadFestivals("", name, venuId));
+    dispatch(loadFestivals(0, name, venuId));
   };
 
   return (

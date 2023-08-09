@@ -5,10 +5,8 @@ import { cartActions } from "../store/cart-slice";
 const CartItem = ({ festival }) => {
   const dispatch = useDispatch();
 
-  //const { id } = festival.id;
-
   const onRemove = () => {
-    dispatch(cartActions.removeFestivalFromCart({id: festival.id}));
+    dispatch(cartActions.removeFestivalFromCart({ id: festival.id }));
   };
   const onAdd = () => {
     dispatch(

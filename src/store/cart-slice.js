@@ -39,6 +39,8 @@ const cartSlice = createSlice({
           startDate: newFestivalCart.startDate,
           endDate: newFestivalCart.endDate,
           price: newFestivalCart.price,
+          availableTickets: newFestivalCart.availableTickets,
+          description: newFestivalCart.description,
           noTickets: action.payload.noTickets,
           city: newFestivalCart.city,
           country: newFestivalCart.country,
@@ -67,6 +69,11 @@ const cartSlice = createSlice({
         existingFestivalCart.noTickets = existingFestivalCart.noTickets - 1;
       }
     },
+    resetCart(state) {
+      state.festivalsCart = [];
+      state.totalPrice = 0;
+      state.totalQuantity = 0;
+    }
   },
 });
 

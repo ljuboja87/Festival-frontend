@@ -36,7 +36,6 @@ const router = createBrowserRouter([
         element: <RootFestivals />,
         id: "venues-list",
         loader: loaderVenues,
-
         children: [
           {
             index: true,

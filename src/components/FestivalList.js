@@ -63,7 +63,10 @@ const FestivalList = () => {
             <th>end</th>
             <th>price</th>
             {ADMIN && <th>available tickets</th>}
+            {ADMIN && <th>total income</th>}
             {token && USER && <th>NO.tickets</th>}
+            <th></th>
+            {ADMIN && <th></th>}
           </tr>
         </thead>
         <tbody>
